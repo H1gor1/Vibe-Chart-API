@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getMusicas } = require('./request');
+const { getVibeMusicas } = require('./request');
 
 router.get('/musicsVibe', async (req, res) => {
   try {
