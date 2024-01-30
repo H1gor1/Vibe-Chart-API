@@ -4,7 +4,7 @@ const { getMusicas } = require('./request');
 
 router.get('/musicsVibe', async (req, res) => {
   try {
-    const musicsVibe = await getMusicas();
+    const musicsVibe = await getVibeMusicas();
     res.json(musicsVibe);
   } catch (error) {
     console.error('Erro ao obter dados da API:', error);
